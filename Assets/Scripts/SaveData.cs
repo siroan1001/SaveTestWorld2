@@ -47,7 +47,6 @@ public class SaveData : UdonSharpBehaviour
     public void SetExp(float count)
     {
         Exp = count;
-        Debug.Log("exp:" + Exp);
 
         // 同期変数の変更を同期させることで自動的にUserDataが更新される
         RequestSerialization();
